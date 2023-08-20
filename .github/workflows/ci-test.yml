@@ -3,6 +3,9 @@ name: "Test Action"
 on:
   workflow_dispatch:
 
+env:
+  TEAMS_URI: ${{ secrets.TEAMS_URI }}
+
 jobs:
   notify:
     name: Test Action
