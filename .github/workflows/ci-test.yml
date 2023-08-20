@@ -16,21 +16,21 @@ jobs:
       - name: Notify Microsoft Teams Channel - Success
         uses: burnsra/teams-notify-action@v1.0.0
         with:
-          TEAMS_URI: ${TEAMS_URI}
+          TEAMS_URI: ${{ secrets.TEAMS_URI }}
           TEAMS_MSG_TITLE: "Test Title (Success)"
           TEAMS_MSG_SUMMARY: "This is an example of from the Teams Notify Action"
           TEAMS_MSG_TYPE: "success"
       - name: Notify Microsoft Teams Channel - Info
         uses: burnsra/teams-notify-action@v1.0.0
         with:
-          TEAMS_URI: ${TEAMS_URI}
+          TEAMS_URI: ${{ secrets.TEAMS_URI }}
           TEAMS_MSG_TITLE: "Test Title (Info)"
           TEAMS_MSG_SUMMARY: "This is an example of from the Teams Notify Action"
           TEAMS_MSG_TYPE: "info"
       - name: Notify Microsoft Teams Channel - Failure
         uses: burnsra/teams-notify-action@v1.0.0
         with:
-          TEAMS_URI: ${TEAMS_URI}
+          TEAMS_URI: ${{ secrets.TEAMS_URI }}
           TEAMS_MSG_TITLE: "Test Title (Failure)"
           TEAMS_MSG_SUMMARY: "This is an example of from the Teams Notify Action"
           TEAMS_MSG_TYPE: "failure"
